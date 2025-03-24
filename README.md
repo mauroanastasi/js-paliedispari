@@ -16,3 +16,8 @@ Ho bisogno di parametri?
 Devo restituire un valore?
 Se sì, di che tipo?
 Buon lavoro e buon divertimento! 
+-------------------------------------------------------------------------------------------
+Palindroma
+chiedo di inseririre la parola con un prompt
+creo la funzione per capire se è palindroma
+stampo risultato
