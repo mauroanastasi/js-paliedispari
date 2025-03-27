@@ -2,14 +2,12 @@
 function reverseWord (word){
     let parola = word.split(``).reverse().join(``)
     if(parola === word){
-        console.log(`è ok`)
+        console.log(`la parola è palindroma`)
     }
     else{
-        console.log(`mi sa di no`)
+        console.log(`la parola non è palindroma`)
     }
-    
-    
-    
+
 }
 
 // corpo del programma
