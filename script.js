@@ -29,32 +29,28 @@ let risultatoSommoNum
 function generoRandom (){
     return Math.floor(Math.random() * 5)+ 1;
 };
-// Funzione per stabilire se un numero è pari o dispari
-function sommoNum (numeroUtente, numeroPc){
+// Funzione che somma i due numeri e per stabilire se un numero è pari o dispari
+function sommoNum (numUtente, numeroPc){
     let risultato;
     risultato = parseInt(numUser) + numeroPc;
-    if(risultato % 2 == 0){
-        console.log(`il risultato è pari`)
+    // dichiaro chi ha vinto
+    if(risultato % 2 == 0 && pariDispari ==`pari`){
+        console.log(`l'utente ha vinto col pari`)
+
+    }
+    else if(risultato % 2 != 0 && pariDispari ==`dispari`){
+        console.log(`l'utente ha vinto col dispari`)
+        
     }
     else{
-        console.log(`il risultato è dispari`)
-        
-    }  
+        console.log(`l'utente ha perso`)
+    }
+
 }
 /////// Corpo del programma
 let pariDispari = prompt(`scegli se pari o dispari`);
 let numUser =prompt(`scegli il tuo numero`);
 // chiamo la funzione per far generare numeri al pc 
 numPc = generoRandom();
-console.log(`questo è il ${numPc}`)
 // chiamo la funzione per sommare numeroUtente col numeroComputer 
 risultatoSommoNum = sommoNum (numUser, numPc);
-console.log(`xxxxxxxdai ${risultatoSommoNum}`)
-
-
-// Sommiamo i due numeri
-
-
-// Stabiliamo se la somma è pari o dispari
-
-// Dichiariamo chi ha vinto
