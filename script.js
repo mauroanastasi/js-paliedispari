@@ -32,7 +32,7 @@ function generoRandom (){
 // Funzione che somma i due numeri e per stabilire se un numero è pari o dispari
 function sommoNum (numUtente, numeroPc){
     let risultato;
-    risultato = parseInt(numUser) + numeroPc;
+    risultato = parseInt(numUtente) + numeroPc;
     // dichiaro chi ha vinto
     if(risultato % 2 == 0 && pariDispari ==`pari`){
         console.log(`l'utente ha vinto col pari`)
