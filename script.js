@@ -28,7 +28,8 @@
 // Funzione per stabilire se un numero è pari o dispari
 
 // Corpo del programma
-
+let pariDispari = prompt(`scegli se pari o dispari`)
+let numUser = prompt(`scegli il tuo numero`)
 
 // Sommiamo i due numeri
 
