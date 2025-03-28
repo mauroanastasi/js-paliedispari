@@ -21,19 +21,30 @@
 
 
 
-
-
+// variabile che contiene il numero del pc
+let numPc;
+// variabile che contiene somma del numeroUtente e numeroComputer
+let risultatoSommoNum
 // Funzione per generare un numero casuale tra 1 e 5
 function generoRandom (){
-    let numPc = Math.floor(Math.random() + 10)+ 1;
-    console.log(numPc)
+    return Math.floor(Math.random() + 10)+ 1;
 };
 // Funzione per stabilire se un numero è pari o dispari
-
-// Corpo del programma
+function sommoNum (numeroUtente, numeroPc){
+    return parseInt(numUser) + numeroPc;
+   
+    
+}
+/////// Corpo del programma
 let pariDispari = prompt(`scegli se pari o dispari`);
-let numUser = prompt(`scegli il tuo numero`);
-generoRandom();
+let numUser =prompt(`scegli il tuo numero`);
+// chiamo la funzione per far generare numeri al pc 
+numPc = generoRandom();
+console.log(`questo è il ${numPc}`)
+// chiamo la funzione per sommare numeroUtente col numeroComputer 
+risultatoSommoNum = sommoNum (numUser, numPc);
+console.log(`xxxxxxxdai ${risultatoSommoNum}`)
+
 
 // Sommiamo i due numeri
 
