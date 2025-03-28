@@ -27,13 +27,19 @@ let numPc;
 let risultatoSommoNum
 // Funzione per generare un numero casuale tra 1 e 5
 function generoRandom (){
-    return Math.floor(Math.random() + 10)+ 1;
+    return Math.floor(Math.random() * 5)+ 1;
 };
 // Funzione per stabilire se un numero è pari o dispari
 function sommoNum (numeroUtente, numeroPc){
-    return parseInt(numUser) + numeroPc;
-   
-    
+    let risultato;
+    risultato = parseInt(numUser) + numeroPc;
+    if(risultato % 2 == 0){
+        console.log(`il risultato è pari`)
+    }
+    else{
+        console.log(`il risultato è dispari`)
+        
+    }  
 }
 /////// Corpo del programma
 let pariDispari = prompt(`scegli se pari o dispari`);
